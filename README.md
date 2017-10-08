@@ -36,14 +36,22 @@ New UI is desktop-first and responsive also in alignment with Visa design guidel
 ## External Libraries: 
     Bootstrap - v3
     Jquery - v3.2.1
+    Jasmine - v2.8
 
     Bootstrap is used for grid system and for responsive layout.
     Jquery - to render DOM elements fetched from ajax response( here events data is included
     as part of js file) and to switch between multiple views.
+    Jasmine - for testing js functions
+
+## Testing
+
+   Added testcases to js functions using jasmine library
 
 ## To Do:
 
     Thought of implementing the exercise using React JS(which I am self-learning) but as libraries/frameworks should be minimal - used jquery.
+    
+    Need to write more testcases, also testcases for event binding on dynamically created elements
 
 ## Acknowledgments
 
