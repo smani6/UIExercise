@@ -1,0 +1,442 @@
+html, 
+body{
+    height:100%;
+    width: 100%;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* VISA Theme colors */
+
+:root{
+    --visa-primary-white : #ffffff;
+    --visa-primary-blue : #1a1f71;
+    --visa-primary-gold:#f7b600;
+    --visa-orange : #ef8400;
+    --visa-yellow: #ffd700;
+    --visa-chart-blue : #0065ea;
+    --visa-primary-gray : #75787b;
+    --visa-text-gray : #5c5c5c;
+    --visa-custom-red : #DC553E;
+    --visa-custom-green : #0c7d34;
+}
+
+/* Top Section logo, banner, search bar */
+
+header {
+    margin-top:40px;
+ }
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+}
+
+.logo{
+	vertical-align: middle;
+ 	padding: 0 10px;
+    height: 10rem;
+}
+
+ .banner{
+ 	padding: 0 10px;
+    height: 6rem;
+    margin: 0 auto;
+ }
+
+.search {
+	padding: 10px;
+}
+
+ .left-inner-addon{
+ 	position: relative;
+ }
+ 
+ .left-inner-addon input{
+ 	padding-top: 10px;
+ 	padding-left: 40px;
+ }
+
+ .left-inner-addon i {
+ 	position: absolute;
+ 	padding: 10px 12px;
+ }
+
+/* Case details view accordian chevron */
+
+.actor-details-chevron-row{ 
+    background-color: var(--visa-primary-gray);
+}
+
+.actor-details-chevron{
+    padding: 5px;
+    float:right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: var(--visa-primary-white);
+    cursor: pointer;
+}
+
+/* End of Case details view accordian chevron*/
+
+
+/* Case details overview */
+
+#actor-details{
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    min-height: 180px;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card-body h4 {
+    text-align: center;
+}
+
+.case-detail-view {
+    margin-top: 40px;
+    clear:both;
+    height: 500px;
+}
+
+.table-wrapper{
+    overflow-y: auto;
+    height : 100%;
+}
+
+.case-detail-view table{
+    padding: 8px;
+    margin-bottom: 0!important;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #000;
+    border-collapse: collapse!important;
+    border-radius: 1px;
+}
+
+.case-detail-view .table > tbody>tr>td{
+    padding: 20px;
+    border-color: #f3f1f1;
+    text-align: center;
+    border: 1px solid;
+    vertical-align: middle!important;
+}
+
+
+/* Back to Grid button */
+.back-to-grid{
+    float:right;
+    margin: 10px 15px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    background: var(--visa-primary-gold);
+    font-size: 16px;
+}
+
+
+/*
+*    TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#events-details-section {
+    height: 700px;
+}
+
+.timeline{
+    overflow-y: scroll;
+    height : 700px;
+
+}
+
+.timeline ul {
+  padding: 50px 0;
+  overflow-y: auto;
+  height : 100%;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 4px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background: var(--visa-primary-blue);
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+  cursor:pointer ;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 180px;
+  padding: 10px;
+  background: #0065ea;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--visa-primary-white);
+  line-height: 0.6;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 40%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li.in-view.position_right div {
+  left: 35px;
+}
+
+.timeline ul li.in-view.position_right div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-right-color: inherit;
+}
+
+.timeline ul li.in-view.position_left div {
+  left: -220px;
+}
+
+.timeline ul li.in-view.position_left div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-left-color: inherit;
+}
+
+.timeline ul li div.red{
+  background-color: var(--visa-custom-red);
+  border-color: var(--visa-custom-red);
+}
+
+.timeline ul li div.orange{
+  background-color: var(--visa-orange);
+  border-color: var(--visa-orange);
+}
+
+.timeline ul li div.blue{
+  background-color: var(--visa-chart-blue);
+  border-color: var(--visa-chart-blue);
+}
+
+.event-time{
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline li div.selected {
+    background-color: var(--visa-custom-green) !important;
+    border-color: var(--visa-custom-green) !important;
+}
+
+.timeline li.position_left div.selected::before {
+    border-left-color: inherit !important;
+}
+
+.timeline li.position_right div.selected::before {
+    border-right-color: inherit !important;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #0065ea;
+  padding: 15px;
+  border: 2px solid red;
+}
+
+.timeline ul li div {
+  /*visibility: hidden;*/
+  opacity: 0;
+  /*transition: all .5s ease-in-out;*/
+}
+
+.timeline ul li.in-view div {
+  /*transform: none;*/
+  visibility: visible;
+  opacity: 1;
+}
+
+/***  Event Details Form ***/
+
+.form-vertical{
+    height: 600px;
+}
+
+.event-title-text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.event-specific-details{
+    border: 1px solid ;
+    text-align:center;
+    height: 95%;
+    overflow-y: scroll;
+    
+}
+
+.panel-body{
+    padding: 15px;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+/*  MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .logo{
+    height: 7rem;
+  }  
+  .banner {
+    height: 5rem;
+  }
+
+  .card {
+    margin-bottom: 5px;
+  }
+    
+  .timeline ul li {
+    margin-left: 50px;
+  }
+  
+  .timeline ul li.in-view.position_left div {
+    left: 35px;
+  }
+
+  .timeline ul li.in-view.position_left div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-right-color: inherit;
+
+  }
+
+  .back-to-grid{
+    margin: 10px 15px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    background: var(--visa-primary-gold);
+    font-size: 12px;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .logo{
+    margin: 0 auto;
+    height: 4rem;
+    margin-bottom: 10px;
+  } 
+  .banner{
+    margin-bottom: 10px;
+  }
+  .row{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .card {
+    margin-bottom: 5px;
+  }
+     
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 150px);
+  }
+  .timeline ul li.in-view.position_left div {
+    left: 35px;
+  }
+
+  .timeline ul li.in-view.position_left div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-right-color: inherit;
+
+  }
+
+  .back-to-grid{
+    margin: 10px 0px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    background: var(--visa-primary-gold);
+    font-size: 12px;
+   }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

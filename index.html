@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VISA UI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+
+        <header>
+            <div class="row">
+              <!-- Logo -->
+              <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                <div class="">
+                  <a href="">
+                      <img class="img-responsive logo" alt="Logo" src="./images/logo.png" class="img-fluid">
+                    </a>
+                </div>
+              </div><!-- End of logo div-->
+
+              <!--Banner section-->
+              <div class="col-lg-7 col-md-4 col-sm-4 col-xs-12">
+                <div class="">
+                    <a href="">
+                      <img class="img-responsive banner" alt="Banner" src="./images/banner.png">
+                    </a>
+                </div>
+              </div><!--End of banner section-->
+
+              <!--Search bar-->
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <div class="search left-inner-addon">
+                  <form action="" method="POST" id="search_mini_form" name="Categories">
+                    <i class="icon-search">&#128269;</i>
+                    <input type="search"
+                           class="form-control" 
+                           placeholder="Search" />
+                  </form>
+                </div>
+              </div><!-- End of search bar-->
+            </div>
+          
+        </header>
+
+        <!-- Case details view accordian chevron --> 
+        <section >
+            <div class="row actor-details-chevron-row">
+              <a class="accordian-toggle" href="">
+                <span class="glyphicon glyphicon-chevron-down actor-details-chevron"></span>
+              </a>  
+            </div>
+        </section> <!-- End of Case details view accordian chevron -->
+
+        <!-- Case details view -->
+        <section id="actor-details" >
+    
+            <!-- Case details overview -->
+            <div class="row">
+
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-body issuer-details">
+                    <h4 >Isssuer Details</h4>
+                  </div>
+                </div>
+              </div>
+            
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-body card-holder-details">
+                    <h4>CardHolder Details</h4>
+                  </div>
+                </div>
+              </div>
+
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-body merchant-details">
+                    <h4>Merchant Details</h4>
+                  </div>
+                </div>
+              </div>
+
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-body acquirer-details">
+                    <h4>Acquirer Details</h4>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End of case details overview -->
+
+            <!-- Case Details Events overview table -->
+            <div class="row case-detail-view" id="case-detail-view">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-wrapper">
+                  <table class="table table-hover table-responsive ">
+                    <tbody>
+                    </tbody>
+                  </table>
+              </div>
+            </div><!-- End of case details events table -->
+        
+        </section> <!-- End of case details view  -->
+
+
+        <!-- Event Details Section -->
+        <section class="" style="display:none;" id="events-details-section">
+          <div class="container">
+
+             <!-- Back to Grid Button -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn back-to-grid"> Back To Grid View</button>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <!-- Timeline View -->
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="timeline">
+                  <ul>
+                  </ul>
+                </div>
+              </div><!--End of timeline view-->
+
+                <!-- Event description form view -->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-vertical">
+
+                  <!-- Event Title-->
+                  <div class="event-title-text">
+                    <p><strong></strong></p>
+                  </div>
+
+                  <div class="event-specific-details">
+                      <div class="panel panel-inverse">
+                          <div class="panel-body">
+                              <form  class="form-horizontal">
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Name</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="John">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Email-id</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="john@visa.com" disabled="">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Card Type</label>
+                                      <div class="col-md-9">
+                                          <select class="form-control">
+                                              <option>VISA 1</option>
+                                              <option>VISA 2</option>
+                                              <option>VISA 3</option>
+                                              <option>VISA 4</option>
+                                              <option>VISA 5</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Issue Type (multiple)</label>
+                                      <div class="col-md-9">
+                                          <select multiple="" class="form-control">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                          </select>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Comments</label>
+                                      <div class="col-md-9">
+                                          <textarea class="form-control" placeholder="Comments" rows="5"></textarea>
+                                      </div>
+                                  </div>
+
+                                
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Verification Details </label>
+                                      <div class="col-md-9">
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="">
+                                              Phone
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="">
+                                              Email
+                                          </label>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label">Address Option</label>
+                                      <div class="col-md-9">
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadios" value="option1" checked="">
+                                              Home
+                                          </label>
+                                          <label class="radio-inline">
+                                              <input type="radio" name="optionsRadios" value="option2">
+                                              Office
+                                          </label>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group has-success has-feedback">
+                                      <label class="col-md-3 control-label">Notes 1</label>
+                                      <div class="col-md-9">
+                                          <textarea class="form-control" placeholder="Notes 1" rows="5"></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="form-group has-warning has-feedback">
+                                      <label class="col-md-3 control-label">Notes 2</label>
+                                      <div class="col-md-9">
+                                          <textarea class="form-control" placeholder="Notes 2" rows="5"></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="form-group has-error has-feedback">
+                                      <label class="col-md-3 control-label">Field 3</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control">
+                                          <span class="fa fa-times form-control-feedback"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group has-error has-feedback">
+                                      <label class="col-md-3 control-label">Field 4</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control">
+                                          <span class="fa fa-times form-control-feedback"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group has-error has-feedback">
+                                      <label class="col-md-3 control-label">Field 5</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control">
+                                          <span class="fa fa-times form-control-feedback"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group has-error has-feedback">
+                                      <label class="col-md-3 control-label">Field 6</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control">
+                                          <span class="fa fa-times form-control-feedback"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group has-error has-feedback">
+                                      <label class="col-md-3 control-label">Field 7</label>
+                                      <div class="col-md-9">
+                                          <input type="text" class="form-control">
+                                          <span class="fa fa-times form-control-feedback"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="col-md-9">
+                                          <button type="submit" class="btn btn-sm btn-success">Save</button>
+                                          <button type="submit" class="btn btn-sm btn-alert">Cancel</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <!-- end panel -->
+                      
+                  </div>
+
+                </div>
+              
+
+              </div>
+          </div>
+        </section>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./data/case_details_data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
