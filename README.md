@@ -1,15 +1,15 @@
-New UI for legacy back office system
+# New UI for legacy back office system
 
 To create a new UI according to the specifications given in the UI doc.
 
-Getting Started
+## Getting Started
 
 As per requirement added all the dependenices (css and js) files in the repository so application
 can run even in absense of internet
 
 New UI is desktop-first and responsive also in alignment with Visa design guidelines(Theme colors).
 
-Event timeline view:
+### Event timeline view:
     
     Current Selected event is show in visa-custom-green color.
     
@@ -18,22 +18,22 @@ Event timeline view:
         Acquirer's are positioned left-side with visa-orange color.
         VISA Merchant is positioned on right-side with custom-red color.
         
-Prerequistis
+## Prerequistis
     None
 
-Installing
+## Installing
     All external libraries are included in repository
 
-Deployment / Running
+## Deployment / Running
     We can clone the repository and open index.html file
 
-Code Organization:
+## Code Organization:
 
     index.html is the Main file for the application.
     css, js, fonts, images are included in each respective folder
     Added case_details_data.js in data folder - which contains all case details (json) as js variable.  
 
-External Libraries: 
+## External Libraries: 
     Bootstrap - v3
     Jquery - v3.2.1
 
@@ -41,11 +41,11 @@ External Libraries:
     Jquery - to render DOM elements fetched from ajax response( here events data is included
     as part of js file) and to switch between multiple views.
 
-To Do:
+## To Do:
 
     Thought of implementing the exercise using React JS(which I am self-learning) but as libraries/frameworks should be minimal - used jquery.
 
-Acknowledgments
+## Acknowledgments
 
     Thanks for good exercise question !!
 
